@@ -1,0 +1,28 @@
+{
+  "name": "whatsapp-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "process": "nodemon server.js",
+    "app": "npm run start --prefix whatsapp-mern",
+    "dev": "concurrently \"npm run process\" \"npm run app\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3",
+    "nodemon": "^2.0.7",
+    "pusher": "^5.0.0"
+  },
+  "engines": {
+    "node": "14.14.0"
+  }
+}
